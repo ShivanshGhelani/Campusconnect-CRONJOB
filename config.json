@@ -1,0 +1,40 @@
+{
+  "service_name": "Campus Connect Backend",
+  "base_url": "https://campusconnect-v2.onrender.com",
+  "endpoints": [
+    "/ping",
+    "/api/health"
+  ],
+  "http_methods": [
+    "GET",
+    "HEAD"
+  ],
+  "interval_seconds": 60,
+  "timeout_seconds": 10,
+  "email": {
+    "smtp_server": "",
+    "smtp_port": 587,
+    "smtp_username": "",
+    "smtp_password": "",
+    "sender_email": "",
+    "recipient_emails": [
+      "admin@example.com"
+    ],
+    "retry_count": 3,
+    "retry_delay_seconds": 300
+  },
+  "reporting": {
+    "schedule": "00:00",
+    "reset_logs_after_send": true,
+    "enable_local_backup": true
+  },
+  "logging": {
+    "level": "INFO",
+    "rotation": "1 day",
+    "retention": "7 days"
+  },
+  "future_endpoints": {
+    "comment": "Add additional endpoints here for future multi-service monitoring",
+    "services": []
+  }
+}
