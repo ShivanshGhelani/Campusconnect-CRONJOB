@@ -3,7 +3,7 @@ name: Campus Connect Monitoring Cron Jobs
 on:
   schedule:
     # Monitor every 5 minutes (GitHub Actions free limit)
-    - cron: '*/5 * * * *'
+    - cron: '*/1 * * * *'
     # Daily report at midnight UTC
     - cron: '0 0 * * *'
   
